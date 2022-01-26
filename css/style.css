@@ -1,0 +1,103 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    --p-color: #E3F401;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Avenir Next LT Pro";
+    src: url("https://sts.com.co/wp-content/themes/generatepress_child/assets/fonts/AvenirNextLTPro-Regular.eot") format('embedded-opentype');
+    font-weight: normal;
+}
+
+.sts-body{
+    background-image: url('/img/background.jpg');
+    text-align: center;
+    font-family: "Avenir Next LT Pro", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+}
+
+.sts-main{
+    width: 100%;
+}
+
+.sts-container{
+    width: 90%;
+    margin: auto;
+    max-width: 1290px;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.sts-brand{
+    padding: 2rem;
+}
+
+.sts-brand__img{
+    width: 150px;
+}
+
+.sts-title{
+    color: var(--p-color);
+    text-transform: uppercase;
+}
+
+.sts-leyend{
+    color: white;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+
+.sts-card{
+    background-color: rgba(0, 0, 0, .5);
+    padding: 2rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid transparent;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.sts-card:hover{
+    background-color: rgba(0, 0, 0, .9);
+    border-color: var(--p-color);
+}
+
+.sts-card:hover .sts-card__name{
+    color: var(--p-color);
+}
+
+.sts-card:hover .sts-card__img path{
+    fill: var(--p-color);
+}
+
+.sts-card__img{
+    width: 100px;
+}
+
+.sts-card__img path{
+    fill: white;
+}
+
+.sts-wrap-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 25rem;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.sts-card__name{
+    font-size: 2.5rem;
+    color: white;
+    transition: .3s;
+}
