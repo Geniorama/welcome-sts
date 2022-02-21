@@ -43,6 +43,8 @@
     width: 150px;
 }
 
+
+
 .sts-title{
     color: var(--p-color);
     text-transform: uppercase;
@@ -76,6 +78,10 @@
     color: var(--p-color);
 }
 
+.sts-card:hover .cls-1{
+    fill: var(--p-color);
+}
+
 .sts-card:hover .sts-card__img path{
     fill: var(--p-color);
 }
@@ -100,4 +106,5 @@
     font-size: 2.5rem;
     color: white;
     transition: .3s;
+    margin-top: 1rem;
 }
